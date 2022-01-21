@@ -28,7 +28,7 @@ body {
     margin: 0px;
 }
 
-/* Seção 01 */
+/* Seção 01 - Tenho interesse */
 
 .container-tenho-interesse {
     height: 600px;
@@ -58,7 +58,7 @@ body {
     font-weight: 500;
 }
 
-/* Seção 02 */
+/* Seção 02 - Cartão de Crédito*/
 
 .container-cc {
     height: 400px;
@@ -67,23 +67,22 @@ body {
     align-items: center;
 }
 
-.container-texto-cc {
-
+.container-texto {
     padding: 64px 64px;
 }
 
-.texto-cc a {
+.texto-secao-roxo a {
     text-decoration: none;
     cursor: pointer;
 }
 
-.texto-cc a:hover {
+.texto-secao-roxo a:hover {
     text-decoration: underline;
     cursor: pointer;
     color: rgb(130, 10, 209);
 }
 
-.texto-cc h2 {
+.texto-secao-roxo h2 {
     color: rgb(130, 10, 209);
     font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
@@ -92,17 +91,102 @@ body {
     text-decoration: none;
 }
 
-.texto-cc p {
+.texto-secao-roxo p {
     font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 3rem;
     margin-top: 0px;
 }
 
-.link-saiba-mais-cc {
+.link-saiba-mais-roxo {
     color: rgb(130, 10, 209);
-    font-size: 20px;
+    font-size: 18px;
     font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
+/* Setor 03 - Nubank Ultravioleta*/
+
+.container-ultravioleta {
+    height: 500px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Setor 04 - Conta do Nubank */
+
+.container-conta {
+    height: 500px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+/* Setor 05 - Visão */
+
+.texto-secao-branco p {
+    color: white;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0px 0px 48px;
+    text-decoration: none;
+}
+
+.link-saiba-mais-branco {
+    color: white;
+    font-size: 18px;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.container-visao {
+    background-color: rgb(130, 10, 209);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto-secao-branco a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.texto-secao-branco a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+/* Setor 06 - Comunidade */
+
+.container-comunidade {
+    background-color: rgb(130, 10, 209);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto-secao-branco h3 {
+    color: white;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    text-decoration: none;    
+}
+
+/* Setor 07 - Informação */
+
+.container-informacao {
+    background-color: rgb(130, 10, 209);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
