@@ -13,27 +13,245 @@
     text-rendering: optimizelegibility;
 }
 
-.cabecalho-container {
+.fixa-cabecalho {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+    will-change: transform;
+}
+
+header {
     display: flex;
-    flex-direction: row;
-    padding: 15px 48px;
-}
-
-#logo-header {
-    padding-right: 20px;
-}
-
-.menu {
-    display: flex;
-    padding-top: 5px;
-    padding-left: 10px;
-
-}
-
-.menu a {
-    padding-right: 30px;
-    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-box-align: center;
     align-items: center;
+    position: relative;
+    will-change: transform;
+    transition: transform 0.2s ease 0s;
+}
+
+.container-cabecalho {
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+}
+
+.container-divisao-cabecalho {
+    height: 56px;
+    gap: 32px;
+    padding-right: 48px;
+    padding-left: 48px;
+    z-index: auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    width: 100%;
+    grid-template-columns: min-content minmax(160px, 1fr) minmax(min-content, auto);
+    position: relative;
+}
+
+.logo-header {
+    display: flex;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 0
+}
+
+.svg-logo {
+    width: 44;
+    height: 24;
+    overflow: hidden;
+    color: inherit;
+}
+
+.logo-header a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.menu-navegacao {
+    display: flex;
+    width: fit-content;
+    list-style: none;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.menu-navegacao > li {
+    height: 100%;
+    margin-right: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;    
+}
+
+.menu-navegacao::before {
+    content: " ";
+    width: 100%;
+    height: 5px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -3;
+    box-shadow: rgb(17 17 17 / 10%) 0px 1px 1px;
+
+}
+
+.menu-link-pagina-inicial {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;  
+    text-decoration: none;
+    margin: 0px;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+}
+
+.menu-link-pagina-inicial::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(130, 10, 209);
+}
+
+.menu-link-para-voce {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: none;
+    text-decoration: none;
+    margin: 0px;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    list-style: none;
+}
+
+.menu-link-para-seu-negocio {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: none;
+    text-decoration: none;
+    margin: 0px;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+
+}
+
+.menu-link-o-nubank {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: none;
+    text-decoration: none;
+    margin: 0px;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+}
+
+.menu-link-perguntas {
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(17, 17, 17);
+
+}
+
+.container-link-login {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.extensao-login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.divisao-login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.link-login {
+    text-decoration: none;
+    line-height: 1.35;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 0px 100%, 100% 100%;
+    background-size: 0px 8%, 100% 8%;
+    transition: background-size 0.2s ease-in-out 0s;
+    background-image: linear-gradient(120deg, rgb(130, 10, 209) 0%, rgb(130, 10, 209) 100%), linear-gradient(120deg, transparent, transparent);
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    color: rgb(130, 10, 209);
+    letter-spacing: -0.01em;
+    font-size: 1.125rem;
+}
+
+.svg-login {
+    margin: 0px 0px 0px 0.5rem;
+    min-width: 16px; 
+    text-decoration: none;
 }
 
 /* Formatação Corpo */
